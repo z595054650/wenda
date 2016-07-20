@@ -1,0 +1,39 @@
+<html>
+    <pre>
+        $!{value}
+        $!{colors}
+
+        #foreach($color in $colors)
+            this is $color color,the count is $!{foreach.count},the index is $!{foreach.index}
+            dsdfs:$!{color}
+        #end
+
+        #macro(render_color,$color,$index)
+            this is $color,$index;
+        #end
+
+        #foreach($color in $colors)
+            #render_color($color,$foreach.index)
+        #end
+
+        #打印map
+        #foreach($key in $map.keySet())
+            key=$key, value=$map.get($key)
+        #end
+
+        #foreach($kv in $map.entrySet())
+            key=$kv.key, value=$kv.value
+        #end
+
+        $!{user.name}
+        $!{user.getName()}
+        $!{user.getDescribtion()}
+        $!{user.describtion}
+    </pre>
+        -------------------------------------------------------------
+    parse: #parse("bottom.html")
+
+    #set($var="标量")
+    #set($revar="$!{var} hello")
+    $!{revar}
+</html>
