@@ -54,7 +54,7 @@ public class IndexController {
         model.addAttribute("map",map);
 
         model.addAttribute("user",new User("zxf"));
-        System.out.println("11112221111");
+        System.out.println("1111222111333333331");
         return "home";
     }
 
