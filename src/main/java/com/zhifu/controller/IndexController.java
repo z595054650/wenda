@@ -21,7 +21,7 @@ import java.util.List;
 /**
  * Created by dylan on 2016/7/13.
  */
-@Controller
+//@Controller
 public class IndexController {
     @Autowired
     WendaService wendaService;

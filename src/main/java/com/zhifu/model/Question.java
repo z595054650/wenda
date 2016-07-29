@@ -11,7 +11,7 @@ public class Question {
     private String title;
     private String content;
     private Date createdDate;
-    private String userId;
+    private int userId;
     private  int commentCount;
 
     public int getId() {
@@ -46,11 +46,11 @@ public class Question {
         this.createdDate = createdDate;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
